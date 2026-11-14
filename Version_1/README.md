@@ -40,24 +40,11 @@ The objective is to solve three clues, unlock a drawer, collect the brass key, a
 4. The AI generates a response based on the game scenario.
 5. The player continues exploring until reaching the escape challenge.
 
-## 6. Important Limitation
+## 6. How to Install & Run
 
-Version 1 relies mainly on LLM instructions and conversation history. It does not use deterministic Python validation for every game action.
+### Option A: Run in Google Colab (Recommended)
+1. Open `app_version_1.ipynb` in Google Colab.
+2. Click the **Secrets** (🔑) icon in the left sidebar and add a new secret named `GEMINI_API_KEY` with your Google AI Studio API key. Toggle **Notebook access** ON.
+3. Click **Runtime** -> **Run all** in the top menu.
+4. Once the final cell runs, click the generated public URL (`https://*.gradio.live`) to open and play the game in your browser.
 
-Therefore, the AI may occasionally accept invalid actions or provide inconsistent game progress.
-
-These limitations motivated the development of Version 2.
-
-## 7. Project File
-
-- `app_v1.py` — Python application for Version 1.
-
-## 8. Security
-
-The Gemini API key should be stored securely using environment variables or Colab Secrets. Never upload API keys or other private credentials to GitHub.
-
----
-
-Project: Athenaeum of Shadows — AI Escape Room  
-Version: 1.0  
-Author: Joseph Sudheer Kongara
