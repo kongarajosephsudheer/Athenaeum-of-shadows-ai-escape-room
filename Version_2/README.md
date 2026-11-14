@@ -34,17 +34,11 @@ To escape, the player must uncover three sequential clues hidden across the room
 4. Python updates the game state and renders the updated HTML room dashboard alongside the Game Master's response.
 5. The player progresses step-by-step until unlocking the exit door to achieve `ESCAPED!` status.
 
-## 6. Key Improvements Over Version 1
-Version 1 relied purely on LLM instructions, making it susceptible to forgotten inventory states, invalid action acceptance, and prompt-injection exploits.
-Version 2 stores all puzzle solutions and rules strictly in Python logic outside the LLM prompt, ensuring 100% deterministic rule enforcement and reliable state consistency across every turn.
+## 6. How to Install & Run
 
-## 7. Project File
-- `app_v2.py` (or `App_version_2.ipynb`) — Python application and notebook for Version 2.
+## Run in Google Colab (Recommended)
+1. Open `App_version_2.ipynb` in Google Colab.
+2. Click the **Secrets** (🔑) icon in the left sidebar and add a new secret named `GEMINI_API_KEY` with your Google AI Studio API key. Toggle **Notebook access** ON.
+3. Click **Runtime** -> **Run all** in the top menu.
+4. Once the final cell runs, click the generated public URL (`https://*.gradio.live`) to open and play the game in your browser.
 
-## 8. Security
-The Gemini API key must be stored securely using environment variables or Google Colab Secrets (`GEMINI_API_KEY`). Never hardcode or upload API keys or private credentials to GitHub.
-
----
-Project: Athenaeum of Shadows — AI Escape Room  
-Version: 2  
-Author: Joseph Sudheer Kongara
