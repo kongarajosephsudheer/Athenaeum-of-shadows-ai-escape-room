@@ -42,7 +42,7 @@ The objective is to solve three clues, unlock a drawer, collect the brass key, a
 
 ## 6. How to Install & Run
 
-### Option A: Run in Google Colab (Recommended)
+###  Run in Google Colab (Recommended)
 1. Open `app_version_1.ipynb` in Google Colab.
 2. Click the **Secrets** (🔑) icon in the left sidebar and add a new secret named `GEMINI_API_KEY` with your Google AI Studio API key. Toggle **Notebook access** ON.
 3. Click **Runtime** -> **Run all** in the top menu.
